@@ -1,4 +1,5 @@
 function createPost(e){
+  debugger;
   console.log("called");
   e.preventDefault();
   const author=document.getElementById("postAuthor");
