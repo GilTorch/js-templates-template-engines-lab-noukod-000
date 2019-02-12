@@ -9,4 +9,7 @@ function createPost(e){
 
   const postTemplate=document.getElementById("post-template");
   postTemplateFn=_.template(postTemplate);
+
+  let postTemplateHTML=postTemplateFn({postTitle:title,postAuthor:author})
+  
 }
