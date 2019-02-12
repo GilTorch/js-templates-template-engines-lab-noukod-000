@@ -7,4 +7,6 @@ function createPost(e){
 
   pageTemplateFn=_.template(pageTemplate);
 
+  const postTemplate=document.getElementById("post-template");
+  postTemplateFn=_.template(postTemplate);
 }
