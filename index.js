@@ -14,4 +14,5 @@ function createPost(e){
 
   let pageTemplateHTML=pageTemplateFn({post:postTemplateHTML});
 
+  return pageTemplateHTML;
 }
