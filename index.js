@@ -18,3 +18,6 @@ function createPost(e){
 
   return pageTemplateHTML;
 }
+
+
+document.getElementById('post-form').addEventListener('submit',createPost)
