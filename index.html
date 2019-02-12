@@ -5,6 +5,54 @@
   </head>
   <body>
     <main>
+      <form id="post-form" onsubmit="createPost();return false">
+        <div>
+          <label for="autor">Author:</label>
+          <input id="postAuthor" name="author" type="text"/>
+        </div>
+        <div>
+          <label for="title">Title:</label>
+          <input id="postTitle" name="title"/>
+        </div>
+        <div>
+          <label for ="body">Body:</label>
+          <textarea id="postBody" name="body">
+          </textarea>
+        </div>
+          <input type="submit"/>
+      </form>
+      <script id="page-template" type="text/x-lodash-template">
+        <div id="sidebar">
+          <div id="post">
+            <%- post %>
+          </div>
+        </div>
+      </script>
+      <script id="post-template" type="text/x-lodash-template">
+        <article>
+          <header><%- postTitle %></header>
+          <footer><%- postAuthor %></footer>
+        </article>
+      </script>
+      <script id="comments-template" type="text/x-lodash-template">
+        <div id="comments">
+          <%- comments %>
+        </div>
+        <form onsubmit="postComment();return false">
+          <div>
+            <label for="commenterName">Commenter Name:</label>
+            <input type="text" name="commenterName"/>
+          </div>
+          <div>
+            <label for="commenterName">Commenter Text:</label>
+            <input type="text" name="commenterText"/>
+          </div>
+          <input type="submit"/>
+        </form>
+      </script>
+      <script id="comment-template" type="text/x-lodash-template">
+        <footer><%- commenterName %></footer>
+      </script>
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
