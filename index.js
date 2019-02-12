@@ -7,5 +7,4 @@ function createPost(e){
 
   pageTemplateFn=_.template(pageTemplate);
 
-
 }
