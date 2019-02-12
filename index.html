@@ -5,7 +5,7 @@
   </head>
   <body>
     <main>
-      <form id="post-form" onsubmit="createPost();return false;">
+      <form id="post-form" onsubmit="createPost(this.event);return false;">
         <div>
           <label for="autor">Author:</label>
           <input id="postAuthor" name="author" type="text"/>
