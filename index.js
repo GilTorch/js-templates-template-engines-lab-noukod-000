@@ -13,5 +13,5 @@ function createPost(e){
   let postTemplateHTML=postTemplateFn({postTitle:title,postAuthor:author})
 
   let pageTemplateHTML=pageTemplateFn({post:postTemplateHTML});
-  
+
 }
