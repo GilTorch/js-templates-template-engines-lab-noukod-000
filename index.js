@@ -6,6 +6,6 @@ function createPost(e){
   const pageTemplate=document.getElementById("page-template")
 
   pageTemplateFn=_.template(pageTemplate);
-  
-  
+
+
 }
